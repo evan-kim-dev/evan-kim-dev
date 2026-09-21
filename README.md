@@ -158,18 +158,6 @@
 
 ---
 
-### 🧳 travel — Met U 축소/초기 버전
-[![Repo](https://img.shields.io/badge/GitHub-travel-181717?logo=github)](https://github.com/evan-kim-dev/travel)
-[![Demo](https://img.shields.io/badge/Demo-Vercel-000000?logo=vercel)](https://travel-evan-s.vercel.app)
-
-Met U보다 앞서 만든 예산 AI 여행 웹의 초기 버전입니다.  
-**TypeScript / Next.js**, **Python / FastAPI**, Supabase, Hotelbeds·TourAPI.  
-**배포**: Vercel.
-
-🔗 [Repository](https://github.com/evan-kim-dev/travel) · [Demo](https://travel-evan-s.vercel.app)
-
----
-
 ## 📫 Contact
 
 GitHub · [@evan-kim-dev](https://github.com/evan-kim-dev)
