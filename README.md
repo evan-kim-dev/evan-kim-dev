@@ -8,7 +8,6 @@
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonwebservices&logoColor=white)](https://aws.amazon.com/)
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)](https://flutter.dev/)
 
 ---
 
@@ -62,12 +61,9 @@
 ![Agent](https://img.shields.io/badge/Agent-0EA5E9)
 ![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white)
 
-2026 AWS 헬스케어 AI 프롬프톤 **대상**. 입원 청소년이 쓰는 정서 동반 AI와, 보호자에게는 **원문 없이 요약만** 보여주는 돌봄 서비스입니다.
-
-- Child: 페르소나·SSE 채팅·가드레일·위기 UI, 감정정원·일기  
-- Dawn Mission Agent: tool-use 일과·미션, Bridge로 보호자용 요약 KB 적재  
-- Guardian: 공감/Q&A RAG·편지(원문 비공개), 퇴원 스토리북·Polly  
-- Infra: DynamoDB · S3 · EventBridge 크론 · ECS Fargate · ALB  
+입원 청소년용 정서 동반 AI와 보호자용 요약 돌봄 서비스입니다.  
+**TypeScript / Next.js**, AWS Bedrock(Converse·Guardrails·Agent), DynamoDB, S3, EventBridge.  
+**배포**: AWS ECS Fargate + ALB.
 
 🔗 [Repository](https://github.com/evan-kim-dev/2026-aws-healthcare-ai-prompthon-beddy)
 
@@ -81,9 +77,9 @@
 ![Hotelbeds](https://img.shields.io/badge/Hotelbeds-0A66C2)
 ![TourAPI](https://img.shields.io/badge/TourAPI-CD2E3A)
 
-강원대 AI Intensive Bootcamp **대상**. 예산·인원·일정·스타일 온보딩 후 AI가 예산을 배분하고, 항공·숙소·환율·딜 API로 실제 상품을 붙입니다. FastAPI BFF + Supabase Auth/Realtime, board·파티챗·DM·카카오 로그인·PWA.
-
-📱 Flutter 클라: [Met-U](https://github.com/evan-kim-dev/Met-U) (Provider · Dio · OAuth)
+예산·일정에 맞춰 AI가 여행 플랜과 상품을 짜 주는 웹 서비스입니다.  
+**TypeScript / Next.js**, **Python / FastAPI**, Supabase, OpenAI·OpenRouter, Hotelbeds·TourAPI.  
+**배포**: Vercel (프론트) · Render (API). Flutter 클라: [Met-U](https://github.com/evan-kim-dev/Met-U).
 
 🔗 [Repository](https://github.com/evan-kim-dev/MetU) · [Live Demo](https://met-u.vercel.app)
 
@@ -96,7 +92,9 @@
 ![Kakao Maps](https://img.shields.io/badge/Kakao%20Maps-FFCD00?logo=kakao&logoColor=000)
 ![TourAPI](https://img.shields.io/badge/TourAPI-CD2E3A)
 
-인구감소·내륙 권역을 염두에 둔 로컬 관광 앱. QuietGems·혼잡 배너, Gemini 스팟 챗·코스 플랜, 날씨/축제/지역화폐·패스포트. TourAPI·KOMSCO SSOT + Actions 동기화.
+강원 지역 스팟·코스를 AI로 추천하는 로컬 관광 웹입니다.  
+**TypeScript / Next.js**, Gemini, Kakao Maps·Leaflet, TourAPI, Python(데이터 동기화).  
+**배포**: Vercel · GitHub Actions로 TourAPI/지역 데이터 갱신.
 
 🔗 [Repository](https://github.com/evan-kim-dev/potato) · [Live Demo](https://potato-peach.vercel.app)
 
@@ -108,7 +106,9 @@
 ![LLM as Judge](https://img.shields.io/badge/LLM--as--Judge-111827)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
 
-동일 질문을 baseline / AI윤리 / 윤리+불교 3조건으로 생성한 뒤 E1–N2·B1–B3 루브릭으로 S/R 점수·HITL·대시보드·CSV까지. FastAPI + React(Vite).
+프롬프트 조건별로 AI 답변의 윤리 위험도를 비교·채점하는 연구용 MVP입니다.  
+**Python / FastAPI**, **TypeScript / React·Vite**, Gemini(LLM-as-Judge), SQLite.  
+**배포**: 로컬·자체 서버 실행 중심 (연구 실험 도구).
 
 🔗 [Repository](https://github.com/evan-kim-dev/ai-ethics-evaluation)
 
@@ -121,7 +121,9 @@
 ![Edge Functions](https://img.shields.io/badge/Edge%20Functions-3ECF8E?logo=deno&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?logo=googlegemini&logoColor=white)
 
-의심 링크·검색어를 Edge Function으로 판별하고, 챗봇 **단디**·복지/뉴스·게시판까지 묶은 시니어 포털. CSP·sanitize·Actions 피드.
+시니어가 의심 링크·검색어를 넣고 위험 여부를 확인하는 포털입니다.  
+**HTML / CSS / JavaScript**, Supabase Edge Functions, Gemini.  
+**배포**: GitHub Pages · Edge Functions는 Supabase.
 
 🔗 [Repository](https://github.com/evan-kim-dev/senior_safe_portal) · [Demo](https://rlarlgns-evan.github.io/senior_safe_portal/)
 
@@ -133,7 +135,9 @@
 ![Chroma](https://img.shields.io/badge/Chroma-FF6F61)
 ![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?logo=capacitor&logoColor=white)
 
-경전 RAG ‘사이버 스님’, 일일 괘시/KarmaCard, 목탁 수행, 아카이브 차트·연꽃 성장. Next.js + FastAPI + Capacitor.
+경전 RAG 챗과 수행·기록 기능이 있는 멘탈케어 앱입니다.  
+**TypeScript / Next.js**, **Python / FastAPI**, Prisma·SQLite, LangChain·Chroma, Capacitor.  
+**배포**: 웹은 Vercel/자체 호스팅, 모바일은 Capacitor 패키징.
 
 🔗 [Repository](https://github.com/evan-kim-dev/Kleshas)
 
@@ -145,7 +149,9 @@
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?logo=googlegemini&logoColor=white)
 ![TradingView](https://img.shields.io/badge/TradingView-2962FF?logo=tradingview&logoColor=white)
 
-S&P·NASDAQ·Dow·KOSPI/KOSDAQ + News RSS → Gemini 일일 브리핑·애널리스트 챗. TradingView·cron 수집.
+한·미 지수·뉴스를 모아 AI 일일 브리핑을 보여주는 대시보드입니다.  
+**TypeScript / Next.js**, Convex, Gemini, Yahoo Finance·RSS, TradingView.  
+**배포**: Vercel · Convex cron으로 수집.
 
 🔗 [Repository](https://github.com/evan-kim-dev/market-news)
 
@@ -155,7 +161,9 @@ S&P·NASDAQ·Dow·KOSPI/KOSDAQ + News RSS → Gemini 일일 브리핑·애널리
 [![Repo](https://img.shields.io/badge/GitHub-travel-181717?logo=github)](https://github.com/evan-kim-dev/travel)
 [![Demo](https://img.shields.io/badge/Demo-Vercel-000000?logo=vercel)](https://travel-evan-s.vercel.app)
 
-Met U의 예산 AI 여행 웹 초기형. 온보딩·trips·항공/숙소 API는 있고, 소셜 레이어는 Met U보다 얇습니다.
+Met U보다 앞서 만든 예산 AI 여행 웹의 초기 버전입니다.  
+**TypeScript / Next.js**, **Python / FastAPI**, Supabase, Hotelbeds·TourAPI.  
+**배포**: Vercel.
 
 🔗 [Repository](https://github.com/evan-kim-dev/travel) · [Demo](https://travel-evan-s.vercel.app)
 
